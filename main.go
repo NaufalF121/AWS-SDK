@@ -26,10 +26,5 @@ func main() {
 	for _, result := range listResult {
 		log.Println(result)
 	}
-	//Upload test
-	err = b2Client.Upload("gambar.png", "images/10798974b35577b7045095a5525f0e2e.png")
-	if err != nil {
-		panic("Error in uploading file to S3")
-	}
-	fmt.Println("File uploaded successfully")
+
 }
